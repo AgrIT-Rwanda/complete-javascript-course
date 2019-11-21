@@ -149,3 +149,20 @@ if(age < 13){
  var drink = age >=18 ? 'beer' : 'juice';
 
 
+/*******************************************************
+ * Switch statement
+ * 
+ */
+var job = 'teacher';
+switch(job){
+   case 'teacher':
+        console.log(firstName + 'teacher kids how to code');
+        break;
+    case 'driver':
+        console.log(firstane + ' drives  an uber in Lisbon.');
+        break;
+    default:
+        console.log(firstName + 'does something else.')
+}
+
+

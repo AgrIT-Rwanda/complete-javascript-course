@@ -101,3 +101,51 @@ x = (3 + 5)* 4 - 6;  // 8 * 4 -6 // 32 - 6
 
 // More operators 
 x  = x + 2  // assignment,condition an exponential is from right to left
+
+
+/*******************************************************************
+ * Making decision
+ * if / else statements
+ */
+
+ var firstanem = 'John';
+ var civilStatus = 'single';
+
+ if (civilStatus === 'married '){
+     console.log(firstName + ' is married');
+ }else{
+     console.log(firstName + 'will hopefully marry soon: ');
+ }
+
+ var isMarried = true;
+ if(isMarried){
+     console.log( firstName + 'is married');
+ }else{
+     console.log(firstName + 'will hopefully marry soon:')
+ }
+
+/****************************************************
+ * Boolean logic
+ */
+var firstName = 'John';
+var age = 16;
+if(age < 13){
+    console.log( " ")
+}else if( age >= 13 && age <= 20){
+
+}else{
+
+}
+
+/*********************************************************
+ * The  Ternary Opertor and Switch statements
+ */
+
+ var firstName = 'John';
+ var age = 22;
+
+ age >= 18 ? console.log(firstName +' drinkds beer. '): console.log(firstName + 'drinks juice.');
+
+ var drink = age >=18 ? 'beer' : 'juice';
+
+

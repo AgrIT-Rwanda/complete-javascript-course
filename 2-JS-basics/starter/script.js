@@ -16,3 +16,8 @@ var firstName = "John";
 
  job = 'Teacher'
  console.log(job);
+
+ //variable name rules
+ var _3years = 3;
+ var johnMark = 'John and Mark';
+ var iff = 23;  //if only is token

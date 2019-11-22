@@ -166,3 +166,18 @@ switch(job){
 }
 
 
+/****************************************************
+ *  Truthy and falsey
+ *  Falsy value: undefined, null, '', NaN,0
+ *  Truthy values: Not falsy
+ */
+
+ var height;
+ if(height){
+     console.log('variable is defined')
+ }else{
+     console.log('variable has not been defined'); 
+ }
+
+  
+

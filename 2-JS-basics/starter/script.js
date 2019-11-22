@@ -195,5 +195,34 @@ switch(job){
   var ageMike = calculateAge(1948);
   var ageJane = calculateAge(1969);
   console.log(ageJohn, ageMike, ageJane);
-  
 
+  /************************************************
+   * Function statements and expression 
+   */
+
+   //function declaration
+   //function whatDoYouDo (job, firstName){}
+  
+   // function expression
+  var whatDoYouDo = function (job, firstName){
+
+        switch(job){
+             case 'Teacher':
+                 return firstName + 'teaches kids how to code';
+             case 'driver':
+                   return firstName + 'drives a can in Lisbon'
+             case 'designer':
+                   return firstName + 'design  beautiful websites';
+             default:
+                 return firstName + 'does something else';
+        }
+
+  }
+
+  console.log(whatDoYouDo('teacher', 'JOhn'));
+  console.log(whatDoYouDo('design', 'Jane')); 
+  console.log(whatDoYouDo('programmer ', 'Origene'));
+
+  // function arrow.
+  const m =(x, y) => {return x * y}
+  console.log(m(4 , 5));

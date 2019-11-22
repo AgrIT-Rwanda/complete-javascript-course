@@ -179,5 +179,21 @@ switch(job){
      console.log('variable has not been defined'); 
  }
 
+ /**************************************************
+  * Functions
+  */
+
+ function calculateAge(birthYear){
+      
+    return 2018 - birthYear;
+  }
+
+
+  var ageJohn = calculateAge(1990);
+  console.log(ageJohn);
+  var ageJohn = calculateAge(1999);
+  var ageMike = calculateAge(1948);
+  var ageJane = calculateAge(1969);
+  console.log(ageJohn, ageMike, ageJane);
   
 

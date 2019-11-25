@@ -226,3 +226,37 @@ switch(job){
   // function arrow.
   const m =(x, y) => {return x * y}
   console.log(m(4 , 5));
+
+/********************************************
+ *   Arrays
+  */
+
+  var names = ['origene', 'john', 'mike'];
+  var years = new Array(1990, 1993, 1995);
+
+  console.log(names[2]);
+  console.log(names.length);
+
+  names[1] = 'Ben';
+  names[names.length] =  'Mary';
+  console.log(names);
+
+  // Different data types
+  var john = ['John', 'Smith', 1990, 'teacher', false];
+
+  john.push('blue');
+  john.unshift('Mr.'); // add element to array.
+  console.log(john);
+
+  john.pop();
+  john.pop();
+  john.shift()
+  console.log(john);
+  console.log(john.indexOf(1990));
+
+
+  var isDesigner =john.indexOf('designer') === -1 ? 'John is not designer': 'JOhn is a designer';
+  console.log(isDesigner);
+  
+  
+

@@ -258,5 +258,51 @@ switch(job){
   var isDesigner =john.indexOf('designer') === -1 ? 'John is not designer': 'JOhn is a designer';
   console.log(isDesigner);
   
+  /**********************************************************
+   * Object and properties.
+   * accessing specific element not based on index but on name.
+   */
+
+
+   var john = {
+       firstName:'John',
+       lastName:'Smith',
+       birthYear:1990,
+       family:['Jane','Mark','Bob','Emily'],
+       job:'teacher',
+       isMarried:false
+   };
+
+   console.log(john.firstName);
+   console.log(john['lastname']);
+
+   var x = 'birthday';
+   console.log(john[x]);
+   john.job = 'designer';
+   john['isMarried'] = true;
+   console.log(john);
+
+   // or you cn use new Object();
+   var jane = new Object();
+   jane.firstaName = 'Jane';
+   jane.birthYear = 1990;
+   jane['lastName'] = 'Smith';
+   console.log(jane);
+
+   // object and method
+   var john = {
+    firstName:'John',
+    lastName:'Smith',
+    birthYear:1990,
+    family:['Jane','Mark','Bob','Emily'],
+    job:'teacher',
+    isMarried:false,
+    calcAge: function(birthYear){
+        return 2018 - birthYear;
+    }
+};
+
+console.log(john.calcAge(1992));
+
   
 

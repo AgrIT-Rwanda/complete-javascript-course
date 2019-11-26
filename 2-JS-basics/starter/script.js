@@ -282,7 +282,7 @@ switch(job){
    john['isMarried'] = true;
    console.log(john);
 
-   // or you cn use new Object();
+   // or you can use new Object();
    var jane = new Object();
    jane.firstaName = 'Jane';
    jane.birthYear = 1990;
@@ -304,5 +304,32 @@ switch(job){
 
 console.log(john.calcAge(1992));
 
+/*************************************************
+ * Loop and iteration
+ */
+
+ for (var i = 0 ; i < 10 ; i++ ){
+     console.log('Hello m')
+ }
+
+ // With arrays.
+
+ var john = ['John', 'Smith',1990, 'design',false, 'blue'];
+ 
+ for(var i = 0; i < john.length; i++){
+
+    console.log(john[i]);
+ }
   
+ // break and continue keywords
+
+ for ( var i = 0 ; i < john.length ; i++){
+
+    if( typeof john[i] !== 'string') continue;
+ }
+
+ for( var i = 0; i < john.length ; i++){
+     if(typeof john[i]  == 'boolean')break;
+     console.log(john[i])
+ }
 

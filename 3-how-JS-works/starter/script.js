@@ -47,7 +47,7 @@ function first() {
     function second() {
         var c = 'Hey!';
         console.log(a + b + c);
-    }
+    }                          
 
 }
 

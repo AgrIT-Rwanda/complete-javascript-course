@@ -26,7 +26,7 @@ var john = {
             console.finalValue;
          }
         }
-}
+};
 
 john.calcTips();
 console.log(john);

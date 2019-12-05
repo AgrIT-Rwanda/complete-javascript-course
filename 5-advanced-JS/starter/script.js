@@ -154,3 +154,33 @@ console.log(score);  // just to show undefined.
     console.log(score >= 5 - goodLuck);
 })(5);
 
+
+//CLOSURES
+function retirement(retirementAge){
+
+    return function(yearOfBirth){
+
+        var age = 2016 - yearOfBirth;
+        console.log((retirmentAge - age ) + a ); 
+    }
+}
+
+var retirementUS = retirement(66);
+retirementUS(1990);
+
+// or
+retirement(66)(1990);
+
+
+/********************************
+ * Closure summary 
+ * =======================================
+ * An inner function has always access to the variables and parameters of its outer function, event
+ * after it's outer of its function has returned
+ */
+
+ var returementGermany = retirement(65);
+ var retirementIceland  = retirement(67);
+
+ retirementIceland(1992);
+ ritirementGermany(1997);

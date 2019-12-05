@@ -126,3 +126,31 @@ function interviewQuestion(job){
 
 var teacherQuestion = interviewQuestion('teacher');   // u can write generic function and call of batch of function in it
 teacherQuestion('john');    //
+
+interviewQuestion('teacher')('Mark');
+
+
+
+// IIFE : immediately invoked function expression(IIFE)
+function game(){
+    var score = Math.random() * 10;
+    console.log(score >= 5);
+}
+
+game();
+
+
+(function(){
+
+    var score = Math.random * 10 ;
+    console.log(score >= 5);
+})();
+
+console.log(score);  // just to show undefined.
+
+(function(goodLuck){
+
+    var score = Math.random * 10 ;
+    console.log(score >= 5 - goodLuck);
+})(5);
+
